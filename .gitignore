@@ -79,6 +79,7 @@ src/javasource/system/UserActionsRegistrar.java
 /.nb-gradle/
 .gradle/
 /build/
+/deployment/
 package.xml
 *.mda
 /nbproject/
