@@ -49,9 +49,9 @@ Thumbs.db
 *.wmv
 
 # mendix https://github.com/mendix/CommunityCommons/blob/master/.gitignore
+*.launch
 deployment
 /.settings
-*.launch
 .classpath
 .project
 *.mpr.lock
@@ -74,17 +74,12 @@ src/.settings
 src/deployment
 src/releases
 *.launch
-.classpath
-.project
 src/javasource/system/actions/VerifyPassword.java
 src/javasource/system/UserActionsRegistrar.java
 /.nb-gradle/
 .gradle/
 /build/
-private/cache/retriever/catalog.xml
 package.xml
-/src/CommunityCommons/userlib/
-/src/CommunityCommons/build/
 *.mda
 /nbproject/
 /.nb-gradle-properties
