@@ -1,2 +1,2 @@
-# View diagram 
-import it on  https://app.diagrams.net/
+# Branching startegy
+to view the .drawio file : import it on   https://app.diagrams.net/
