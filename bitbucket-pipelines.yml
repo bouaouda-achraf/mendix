@@ -12,5 +12,3 @@ pipelines:
           script:
             - git remote add github https://github.com/bouaouda-achraf/mendix.git
             - git push
-  branches:
-    - test
