@@ -8,7 +8,9 @@ pipelines:
   default:
     - parallel:
       - step:
-          name: 'Build and Test'
+          name: 'Sync with github Repo'
           script:
-            - echo "Sync with github Repo "
-            - ls -la
+            - git remote add github https://github.com/bouaouda-achraf/mendix.git
+            - git push
+  branches:
+    - test
