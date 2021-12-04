@@ -11,4 +11,4 @@ pipelines:
           name: 'Build and Test'
           script:
             - echo "Sync with github Repo "
-
+            - ls -la
