@@ -11,5 +11,5 @@ pipelines:
           name: 'Sync with github Repo'
           script:
             - git remote add github https://$GIT_USER:$GIT_PASS@github.com/bouaouda-achraf/mendix.git
-            - git push github master
+            - git push github master 
             
