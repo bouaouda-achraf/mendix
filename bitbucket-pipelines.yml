@@ -3,7 +3,6 @@
 # -----
 # You can specify a custom docker image from Docker Hub as your build environment.
 
-
 pipelines:
   default:
     - parallel:
@@ -12,3 +11,9 @@ pipelines:
           script:
             - git remote add github https://$GIT_USER:$GIT_PASS@github.com/bouaouda-achraf/mendix.git
             - git push github master 
+      - step:
+          name: 'push docker image'
+          script:
+            - docker build -t bouaoudaachraf/mendix:mendix-app:$CI .
+          services:
+            - docker
