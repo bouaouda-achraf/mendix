@@ -14,7 +14,8 @@ pipelines:
       - step:
           name: 'push docker image'
           script:
-            - docker build -t bouaoudaachraf/mendix:mendix-app:$BITBUCKET_BUILD_NUMBER .
-            - docker push bouaoudaachraf/mendix:mendix-app:$BITBUCKET_BUILD_NUMBER
+            - docker build -t mendix-app .
+            - docker tag mendix-app bouaoudaachraf/mendix-app:$BITBUCKET_BUILD_NUMBER
+            - docker push bouaoudaachraf/mendix-app:$BITBUCKET_BUILD_NUMBER
           services:
             - docker
